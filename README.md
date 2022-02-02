@@ -1,8 +1,14 @@
 # Getting Started with Create React App and Web3-ui
 
-Start by running
-`yarn`
-`yarn start`
+This repo is a starting point for using [React](https://github.com/facebook/create-react-app) with the [web3-ui library](https://github.com/Developer-DAO/web3-ui)
+
+This repo is meant to create a quick starting point for using the [web3-ui library](https://github.com/Developer-DAO/web3-ui) with React.
+
+### Start by running
+
+`yarn` to install packages
+
+`yarn start` to view on localhost:3000
 
 ## Notes about getting to work
 
