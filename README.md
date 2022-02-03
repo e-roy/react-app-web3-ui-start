@@ -21,13 +21,13 @@ This repo is meant to create a quick starting point for using the [web3-ui libra
 If you are using yarn:
 
 ```bash
-yarn add --dev react-app-rewired stream-browserify assert util stream-http https-browserify os-browserify url buffer process
+yarn add --dev react-app-rewired stream-browserify assert util stream-http https-browserify os-browserify url buffer process crypto-browserify
 ```
 
 If you are using npm:
 
 ```bash
-npm install --save-dev react-app-rewired stream-browserify assert util stream-http https-browserify os-browserify url buffer process
+npm install --save-dev react-app-rewired stream-browserify assert util stream-http https-browserify os-browserify url buffer process crypto-browserify
 ```
 
 - Create `config-overrides.js` in the root of your project folder with the content:
@@ -45,6 +45,7 @@ module.exports = function override(config) {
     https: require.resolve("https-browserify"),
     os: require.resolve("os-browserify/browser"),
     url: require.resolve("url"),
+    crypto: require.resolve("crypto-browserify"),
   });
   config.resolve.fallback = fallback;
   config.plugins = (config.plugins || []).concat([
